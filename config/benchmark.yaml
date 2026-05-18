@@ -1,0 +1,2 @@
+scenario: fk-conflict
+iterations: 1

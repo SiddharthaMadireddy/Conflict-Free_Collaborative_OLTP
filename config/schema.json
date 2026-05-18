@@ -1,0 +1,32 @@
+{
+  "tables": {
+    "users": {
+      "columns": [
+        "id",
+        "username",
+        "name"
+      ],
+      "pk": "id",
+      "unique": [
+        "username"
+      ]
+    },
+    "posts": {
+      "columns": [
+        "id",
+        "user_id",
+        "title",
+        "body"
+      ],
+      "pk": "id"
+    }
+  },
+  "foreign_keys": [
+    {
+      "child_table": "posts",
+      "child_column": "user_id",
+      "parent_table": "users",
+      "parent_column": "id"
+    }
+  ]
+}

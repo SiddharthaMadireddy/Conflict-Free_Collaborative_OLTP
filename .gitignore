@@ -1,0 +1,37 @@
+# Python cache and virtual environments
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+
+# Test and benchmark artifacts
+.pytest_cache/
+.coverage
+htmlcov/
+outputs/logs/
+outputs/benchmark-results/
+data/
+data_*/
+report.json
+l3_sample.json
+
+# IDE and OS files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Anvil Council files (ignore all Anvil-P-E except bench-p01-crdt)
+Anvil-P-E/*
+!Anvil-P-E/bench-p01-crdt/
