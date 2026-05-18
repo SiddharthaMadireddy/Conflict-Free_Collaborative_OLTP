@@ -34,7 +34,7 @@ The engine supports explicitly declared foreign key policies under network parti
 - `tombstone`: Children survive; their foreign key column continues to reference the logically deleted parent (referentially live in CRDT metadata).
 - `orphan`: Children survive; their foreign key column is explicitly set to `NULL` or a documented sentinel.
 
-### 4. Bounded Metadata Growth ($O(\text{writers})$)
+### 4. Bounded Metadata Growth 
 
 Vector clocks and operation logs that grow indefinitely per write are a known failure mode of naive CRDTs.
 
